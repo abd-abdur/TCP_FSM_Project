@@ -39,9 +39,5 @@ Each event triggers a state transition if applicable. For invalid events, the pr
 
 ### 4. Exit the Program:
 
-Type 
-```bash
-exit
-```
-to quit the FSM program.
+Type exit to quit the FSM program.
 
