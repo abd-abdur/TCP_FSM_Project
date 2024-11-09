@@ -17,7 +17,7 @@ The JAR file `ar7165.jar` contains only the source files for this project. If yo
 
 ```bash
 javac -d bin src/fsm/*.java src/states/*.java src/events/*.java src/actions/*.java src/main/*.java
-
+```
 
 ### 2. Run the Program
 
@@ -25,14 +25,23 @@ Run the Program: To run the program, navigate to the directory containing the co
 
 ```bash
 java -cp bin main.TcpFsmMain
+```
 
-3. Input Events: Enter events as strings in uppercase, matching the following list:
+### 3. Input Events
 
+Enter events as strings in uppercase, matching the following list:
+
+```bash
 PASSIVE_OPEN, ACTIVE_OPEN, SYN, SYN_ACK, ACK, FIN, FIN_ACK, CLOSE, RDATA, SDATA
+```
 
 Each event triggers a state transition if applicable. For invalid events, the program will display an error message and continue.
 
-4. Exit the Program:
+### 4. Exit the Program:
 
-Type exit to quit the FSM program.
+Type 
+```bash
+exit
+```
+to quit the FSM program.
 
